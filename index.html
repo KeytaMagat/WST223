@@ -1,43 +1,244 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOX TEXT</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="wrapper" class="borderstyle">
-        <header id="content_area">
-            <section id="header1" class="borderstyle">
-                header1
-            </section>
-            <section class="borderstyle">
-                header2
-            </section>
-        </header>
-        <section id="content_area">
-            <aside id="content_area" class="leftside">
-                <sidebar1 class="borderstyle">
-                    UpperLeftSidebar1
-                </sidebar1>
-                <sidebar2 class="borderstyle">
-                    BottomLeftSidebar2
-                </sidebar2>
-            </aside>
-            <main class="borderstyle">
-                main 1
-            </main>
-            <aside class="borderstyle">
-                RightSiderBar
-            </aside>
-        </section>
-        <footer class="borderstyle">
-            Footer
-        </footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter Cloning</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"/>
+    <!-- Local CssLink -->
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- sidebar starts -->
+    <div class="sidebar">
+      <i class="fab fa-twitter"></i>
+
+      <div class="sidebarOption active">
+        <span class="material-icons">home</span>
+        <h1>Home</h1>
+      </div>
+      
+      <div class="sidebarOption">
+        <span class="material-icons"> search </span>
+        <h2>Explore</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> notifications_none </span>
+        <h2>Notifications</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> mail_outline </span>
+        <h2>Messages</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> bookmark_border </span>
+        <h2>Bookmarks</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> list_alt </span>
+        <h2>Lists</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> perm_identity </span>
+        <h2>Profile</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> more_horiz </span>
+        <h2>More</h2>
+      </div>
+      <button class="sidebar__tweet">Tweet</button>
     </div>
-</body>
+    <!-- sidebar ends -->
+
+    <!-- feed starts -->
+    <div class="feed">
+      <div class="feed__header">
+        <h2>Home</h2>
+
+        <table>
+            <tr>
+                <th>For you</th>
+                <th>Following</th>
+            </tr>
+        </table>
+      </div>
+
+      <!-- tweetbox starts -->
+      <div class="tweetBox">
+        <form>
+          <div class="tweetbox__input">
+            <img
+              src="resources/profile.jpg"
+              alt=""
+            />
+            <input type="text" placeholder="What's happening?" />
+          </div>
+          <button class="tweetBox__tweetButton">Tweet</button>
+        </form>
+      </div>
+      <!-- tweetbox ends -->
+
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img src="resources/noProfile.jpg" alt="">
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                Somanath Goudar
+                <span class="post__headerSpecial"
+                  ><span class="material-icons post__badge"> verified </span>@somanathg</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <img
+            src="resources/postpic.jpg"
+            alt=""
+          />
+          <div class="post__footer">
+            <span class="material-icons"> repeat </span>
+            <span class="material-icons"> favorite_border </span>
+            <span class="material-icons"> publish </span>
+          </div>
+
+        </div>
+      </div>
+      <!-- post ends -->
+
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img src="resources/noProfile.jpg" alt="">
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                Somanath Goudar
+                <span class="post__headerSpecial"
+                  ><span class="material-icons post__badge"> verified </span>@somanathg</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <img
+            src="resources/postpic.jpg"
+            alt=""
+          />
+
+          <div class="post__footer">
+            <span class="material-icons"> repeat </span>
+            <span class="material-icons"> favorite_border </span>
+            <span class="material-icons"> publish </span>
+          </div>
+        </div>
+      </div>
+      <!-- post ends -->
+
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img src="resources/noProfile.jpg" alt="">
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                Somanath Goudar
+                <span class="post__headerSpecial"
+                  ><span class="material-icons post__badge"> verified </span>@somanathg</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <img
+            src="resources/postpic.jpg"
+            alt=""
+          />
+
+          <div class="post__footer">
+            <span class="material-icons"> repeat </span>
+            <span class="material-icons"> favorite_border </span>
+            <span class="material-icons"> publish </span>
+          </div>
+        </div>
+      </div>
+      <!-- post ends -->
+    </div>
+    <!-- feed ends -->
+
+    <!-- widgets starts -->
+    <div class="widgets">
+      <div class="widgets__input">
+        <span class="material-icons widgets__searchIcon"> search </span>
+        <input type="text" placeholder="Search Twitter" />
+      </div>
+      
+      <div class="widgets__widgetContainer">
+        <h2>What's happening?</h2>
+        <!-- embed post1 Start -->
+        <blockquote class="twitter-tweet">
+          <p lang="zxx" dir="ltr">
+            <a href="https://t.co/8Wk08UhSS7">pic.twitter.com/8Wk08UhSS7</a>
+          </p>
+          &mdash; Nature 🌱 (@nature_forum)
+          <a href="https://twitter.com/nature_forum/status/1629375347203403776?ref_src=twsrc%5Etfw">February 25, 2023</a>
+        </blockquote> 
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <!-- embed post1 End -->
+
+        <!-- embed post2 Start -->
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">Thank you 
+            <a href="https://twitter.com/Spotify?ref_src=twsrc%5Etfw">@Spotify</a> for the support! Listen to &#39;on the street (with J. Cole)&#39; right now!<br>👉 
+            <a href="https://t.co/qTKBSSpwXS">https://t.co/qTKBSSpwXS</a>
+            <a href="https://twitter.com/hashtag/jhope?src=hash&amp;ref_src=twsrc%5Etfw">#jhope</a> 
+            <a href="https://twitter.com/hashtag/%EC%A0%9C%EC%9D%B4%ED%99%89?src=hash&amp;ref_src=twsrc%5Etfw">#제이홉</a> 
+            <a href="https://twitter.com/hashtag/on_the_street?src=hash&amp;ref_src=twsrc%5Etfw">#on_the_street</a> 
+            <a href="https://t.co/9xLjoX7iJj">pic.twitter.com/9xLjoX7iJj</a>
+          </p>&mdash; BTS_official (@bts_bighit) 
+          <a href="https://twitter.com/bts_bighit/status/1632697533737865216?ref_src=twsrc%5Etfw">March 6, 2023</a>
+        </blockquote> 
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <!-- embed post2 End -->
+      </div>
+
+      <!-- <div class="widgets__follow">
+        <h2>Who to Follow</h2>
+        
+          
+        </div>
+        <div class="post__avatar">
+          <img src="resources/noProfile.jpg" alt="">
+        </div> -->
+
+      </div>
+    </div>
+    <!-- widgets ends -->
+  </body>
 </html>
